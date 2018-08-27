@@ -1,6 +1,6 @@
 # Chuck Quotes
 
-Check out [LIVE DEMO](https://example.com/)
+Check out [LIVE DEMO](https://competent-gates-92c4a0.netlify.com/)
 
 # Getting started
 

@@ -23,7 +23,8 @@ export const AppBar = styled.nav`
 export const Footer = styled.footer`
 	margin: 15px;
 	min-height: 70px;
-	color: #d9d9d9
+	width: calc(100% - 30px);
+	color: #d9d9d9;
 	display: flex;
 	flex-direction: column;
 	justify-content: space-between;

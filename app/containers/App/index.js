@@ -53,7 +53,7 @@ export default function App() {
       </main>
       <Footer>
         <Link to="https://github.com/michaelgichia/chucksfacts">
-          Source code
+          Source Code
         </Link>
         <Link to="https://linkedin.com/in/michaelgichia/">LinkedIn</Link>
         <Link to="https://twitter.com/mike_gichia">Twitter</Link>
