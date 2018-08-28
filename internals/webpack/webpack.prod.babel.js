@@ -4,6 +4,7 @@ const HtmlWebpackPlugin = require('html-webpack-plugin');
 const WebpackPwaManifest = require('webpack-pwa-manifest');
 const OfflinePlugin = require('offline-plugin');
 const { HashedModuleIdsPlugin } = require('webpack');
+const CopyWebpackPlugin = require('copy-webpack-plugin')
 
 module.exports = require('./webpack.base.babel')({
   mode: 'production',
@@ -54,7 +55,7 @@ module.exports = require('./webpack.base.babel')({
 
       // No need to cache .htaccess. See http://mxs.is/googmp,
       // this is applied before any match in `caches` section
-      excludes: ['.htaccess'],
+      excludes: ['.htaccess', '_redirects'],
 
       caches: {
         main: [':rest:'],
@@ -88,6 +89,14 @@ module.exports = require('./webpack.base.babel')({
       hashDigest: 'hex',
       hashDigestLength: 20,
     }),
+
+    new CopyWebpackPlugin([
+      {
+        from: `${path.join(process.cwd())}/_redirects`,
+        to: `${path.join(process.cwd())}/build/_redirects`,
+        toType: 'file'
+      },
+    ])
   ],
 
   performance: {

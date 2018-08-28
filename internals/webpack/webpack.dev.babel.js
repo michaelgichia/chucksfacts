@@ -12,7 +12,7 @@ const CircularDependencyPlugin = require('circular-dependency-plugin');
 const logger = require('../../server/logger');
 const pkg = require(path.resolve(process.cwd(), 'package.json'));
 const { dllPlugin } = pkg;
-
+// console.log({jane: path.join(process.cwd())})
 const plugins = [
   new webpack.HotModuleReplacementPlugin(), // Tell webpack we want hot reloading
   new HtmlWebpackPlugin({
