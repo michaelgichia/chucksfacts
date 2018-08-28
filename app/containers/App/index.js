@@ -52,11 +52,15 @@ export default function App() {
         </Switch>
       </main>
       <Footer>
-        <Link to="https://github.com/michaelgichia/chucksfacts">
+        <a href="https://github.com/michaelgichia/chucksfacts" target="_blanck">
           Source Code
-        </Link>
-        <Link to="https://linkedin.com/in/michaelgichia/">LinkedIn</Link>
-        <Link to="https://twitter.com/mike_gichia">Twitter</Link>
+        </a>
+        <a href="https://linkedin.com/in/michaelgichia/" target="_blanck">
+          LinkedIn
+        </a>
+        <a href="https://twitter.com/mike_gichia" target="_blanck">
+          Twitter
+        </a>
       </Footer>
     </React.Fragment>
   );
