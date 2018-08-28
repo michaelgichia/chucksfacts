@@ -8396,14 +8396,6 @@ react-router@^4.2.0, react-router@^4.3.1:
     prop-types "^15.6.1"
     warning "^4.0.1"
 
-react-swipe@^5.1.1:
-  version "5.1.1"
-  resolved "https://registry.yarnpkg.com/react-swipe/-/react-swipe-5.1.1.tgz#5aeb08afc5efec13507aed6e5841360821e9f0d1"
-  dependencies:
-    object-assign "^4.1.1"
-    prop-types "^15.6.0"
-    swipe-js-iso "^2.0.4"
-
 react-test-renderer@16.4.1, react-test-renderer@^16.0.0-0:
   version "16.4.1"
   resolved "https://registry.yarnpkg.com/react-test-renderer/-/react-test-renderer-16.4.1.tgz#f2fb30c2c7b517db6e5b10ed20bb6b0a7ccd8d70"
@@ -9666,10 +9658,6 @@ swap-case@^1.1.0:
   dependencies:
     lower-case "^1.1.1"
     upper-case "^1.1.1"
-
-swipe-js-iso@^2.0.4:
-  version "2.0.4"
-  resolved "https://registry.yarnpkg.com/swipe-js-iso/-/swipe-js-iso-2.0.4.tgz#3371608112b30182e898f61d5bc02f7e38099c3d"
 
 symbol-observable@1.0.1:
   version "1.0.1"

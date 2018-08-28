@@ -6,21 +6,21 @@
 import styled, { css } from 'styled-components';
 
 const sizes = {
-	largeScreen: 1600,
-	desktop: 1200,
-	miniLaptop: 992,
-	tablet: 768,
-	phone: 576,
+  largeScreen: 3000,
+  desktop: 1200,
+  miniLaptop: 992,
+  tablet: 768,
+  phone: 576,
 };
 
 const media = Object.keys(sizes).reduce((acc, label) => {
-	acc[label] = (...args) => css`
-		@media (max-width: ${sizes[label] / 16}em) {
-			${css(...args)};
-		}
-	`;
+  acc[label] = (...args) => css`
+    @media (max-width: ${sizes[label] / 16}em) {
+      ${css(...args)};
+    }
+  `;
 
-	return acc;
+  return acc;
 }, {});
 
 export const Column = styled.div`
@@ -40,18 +40,18 @@ export const Column = styled.div`
 `;
 
 export const Row = styled.div`
-	position: relative;
-	height: auto;
-	zoom: 1;
-	display: block;
-	box-sizing: border-box;
+  position: relative;
+  height: auto;
+  zoom: 1;
+  display: block;
+  box-sizing: border-box;
 
   &::before {
-		content: "";
-		display: table;
-		text-decoration: inherit;
-		vertical-align: inherit;
-		box-sizing: border-box;
+    content: '';
+    display: table;
+    text-decoration: inherit;
+    vertical-align: inherit;
+    box-sizing: border-box;
   }
 `;
 
